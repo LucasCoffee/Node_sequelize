@@ -7,6 +7,7 @@ class Controller{
             const listaDeResgisto = await this.entidadeService.pegaTodosOsRegistros();
             return res.status(200).json(listaDeResgisto);
         } catch (error) {
+            console.log(error);
             //erro
         }
     }
